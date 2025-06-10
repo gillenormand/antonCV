@@ -83,6 +83,7 @@ header {
     align-items: center;
     background-color: var(--bg-beg);
     max-width: 641px;
+    width: 100%;
     height: auto;
     border-radius: var(--border-radius);
     padding: 36px;
