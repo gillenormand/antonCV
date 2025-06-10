@@ -79,6 +79,8 @@ header {
 }
 
 .description {
+    display: flex;
+    align-items: center;
     background-color: var(--bg-beg);
     max-width: 641px;
     height: auto;
@@ -132,6 +134,17 @@ section {
 
 .materials_title, .examples_title {
     font-weight: bold;
+}
+
+.examples {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.examples_categoty_title {
+    
+    text-align: center;
 }
 
 .examples_links_list {
