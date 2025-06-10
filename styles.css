@@ -168,7 +168,7 @@ section {
     }
 
     .avatar>img {
-        width: 512px;
+        max-width: 512px;
         height: auto;
     }
 
