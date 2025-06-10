@@ -126,6 +126,18 @@ section {
     list-style: none;
 }
 
+.materials, .examples {
+    text-align: left;
+}
+
+.materials_title, .examples_title {
+    font-weight: bold;
+}
+
+.examples_links_list {
+    list-style: none;
+}
+
 @media (max-width: 729px) {
     :root {
         --border-radius: 30px;
@@ -171,6 +183,10 @@ section {
     }
     .tools_item {
         text-align: left;
+    }
+
+    .materials_item {
+        margin-left: 15px;
     }
 }
 
