@@ -166,8 +166,19 @@ section {
         row-gap: 25px;
         align-items: center;
     }
+.avatar {
+    max-width: 100%; /* Ограничиваем ширину контейнера */
+    display: flex;
+    justify-content: center; /* Центрируем изображение */
+}
 
-    .avatar>img {
+.avatar > img {
+    max-width: 100%; /* Изображение будет масштабироваться */
+    height: auto;    /* Сохраняем пропорции */
+    border: solid orangered 5px;
+    border-radius: 100%;
+}
+    .avatar>img1 {
         max-width: 512px;
         width:100%;
         height: auto;
