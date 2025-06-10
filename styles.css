@@ -210,7 +210,9 @@ section {
     .tools_item {
         text-align: left;
     }
-
+.examples {
+    overflow-x: hidden;
+}
     .materials_item {
         margin-left: 15px;
     }
