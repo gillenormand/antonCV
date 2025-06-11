@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Montserrat Alternates';
-    src: url('MontserratAlternates-Regular.woff2') format('woff2');
+    src: url('./fonts/MontserratAlternates-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Montserrat Alternates';
-    src: url('MontserratAlternates-Bold.woff2') format('woff2');
+    src: url('./fonts/MontserratAlternates-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -72,6 +72,7 @@ header {
     background-color: var(--bg-gray);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     column-gap: 24px;
     padding-bottom: 24px;
 }
@@ -165,6 +166,10 @@ section {
     list-style: none;
 }
 
+.examples_links_items {
+    text-align: center;
+}
+
 .examples_links_items>a:not(:first-child)::before {
  content: ' | ';
  color: black;
@@ -184,22 +189,19 @@ section {
         row-gap: 25px;
         align-items: center;
     }
-.avatar {
-    max-width: 100%; /* Ограничиваем ширину контейнера */
-    display: flex;
-    justify-content: center; /* Центрируем изображение */
-}
 
-.avatar > img {
-    max-width: 100%; /* Изображение будет масштабироваться */
-    height: auto;    /* Сохраняем пропорции */
-    border: solid orangered 5px;
-    border-radius: 100%;
-}
-    .avatar>img1 {
-        max-width: 512px;
-        width:100%;
+    .avatar {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .avatar > img {
+        max-width: 100%;
+        width: 420px;
         height: auto;
+        border: solid orangered 5px;
+        border-radius: 100%;
     }
 
     .tools {
@@ -243,9 +245,6 @@ section {
         --border-radius: 20px;
     }
 
-    .avatar>img {
-        width: 420px;
-    }
     .description {
         padding: 10px;
     }
@@ -263,7 +262,7 @@ section {
     }
 }
 
-@media (max-width: 350px){
+@media (max-width: 406px){
     .tools {
         grid-template-columns: 1fr;
     }
