@@ -152,6 +152,11 @@ section {
     list-style: none;
 }
 
+.examples_links_items>a:not(:first-child)::before {
+ content: ' | ';
+ color: black;
+}
+
 @media (max-width: 729px) {
     :root {
         --border-radius: 30px;
