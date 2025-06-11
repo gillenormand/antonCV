@@ -14,6 +14,10 @@
     font-display: swap;
 }
 
+* {
+    box-sizing: border-box;
+  }
+
 :root {
     --bg-gray: #313131;
     --bg-beg: #FFF3E0;
@@ -133,6 +137,10 @@ section {
     text-align: left;
 }
 
+.materials_title {
+    text-align: center;
+}
+
 .materials_title, .examples_title {
     font-weight: bold;
 }
@@ -141,6 +149,11 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.examples_categoty {
+    display: flex;
+    flex-direction: column;
 }
 
 .examples_categoty_title {
@@ -215,9 +228,11 @@ section {
     .tools_item {
         text-align: left;
     }
-.examples {
-    overflow-x: hidden;
-}
+
+    .contacts {
+        overflow-x: hidden;
+    }
+
     .materials_item {
         margin-left: 15px;
     }
@@ -245,5 +260,11 @@ section {
 
     .tools_item:first-child {
         list-style: disc;
+    }
+}
+
+@media (max-width: 350px){
+    .tools {
+        grid-template-columns: 1fr;
     }
 }
