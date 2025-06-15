@@ -22,7 +22,6 @@
     --bg-gray: #313131;
     --bg-beg: #FFF3E0;
     --border-radius: 40px;
-    box-sizing: border-box;
 }
 
 body {
@@ -158,7 +157,6 @@ section {
 }
 
 .examples_categoty_title {
-    
     text-align: center;
 }
 
@@ -171,8 +169,8 @@ section {
 }
 
 .examples_links_items>a:not(:first-child)::before {
- content: ' | ';
- color: black;
+    content: ' | ';
+    color: black;
 }
 
 @media (max-width: 729px) {
@@ -227,6 +225,7 @@ section {
     .tools_item:first-child {
         list-style: disc;
     }
+    
     .tools_item {
         text-align: left;
     }
