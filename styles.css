@@ -264,5 +264,15 @@ section {
 @media (max-width: 406px){
     .tools {
         grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .tools_block, .tools_title, .tools_item {
+        text-align: center;
+        list-style: none;
+    }
+
+    .tools_item:first-child{
+        list-style: none;
     }
 }
